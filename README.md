@@ -23,7 +23,11 @@ echo --global somente no próprio computador
 git config --global user.email "matheus.costa.vieira@gmail.com"
 git config --global user.name "Matheus Costa Vieira"
 
-git commit-m "Initial commit"
+git commit -m "Initial commit"
 git push origin master
-
+```
+```
+git add .
+git commit -m "<digite seu comentário>"
+git push origin master
 ```
