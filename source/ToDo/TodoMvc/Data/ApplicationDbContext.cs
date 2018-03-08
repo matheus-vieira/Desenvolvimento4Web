@@ -8,10 +8,12 @@ using TodoMvc.Models;
 
 namespace TodoMvc.Data
 {
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    public class ApplicationDbContext
+     : IdentityDbContext<ApplicationUser>
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-            : base(options)
+        public ApplicationDbContext(
+            DbContextOptions<ApplicationDbContext> options
+        ) : base(options)
         {
         }
 
@@ -22,5 +24,7 @@ namespace TodoMvc.Data
             // For example, you can rename the ASP.NET Identity table names and more.
             // Add your customizations after calling base.OnModelCreating(builder);
         }
+
+        public DbSet<ToDoItem> Items { get; set; }
     }
 }
