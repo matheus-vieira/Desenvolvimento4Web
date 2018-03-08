@@ -1,5 +1,22 @@
 # Desenvolvimento4Web
+
 Códigos da disciplina
+
+Para adicionar o bash do Ubuntu no VS Code\
+
+Pressione CTRL + , (control + virgula)\
+
+no lado direito do arquivo coloque esse texto\
+
+// Bash on Ubuntu (on Windows)\
+"terminal.integrated.shell.windows": "C:\\Windows\\System32\\bash.exe"\
+
+Para abrir o terminal
+Pressione CTRL + ' (control + aspa)
+
+Ou botão direito na pasta desejada (no caso pode ser a onde está o projeto mvc)
+
+Comando para iniciar o projeto
 
 ```
 mkdir ToDo
