@@ -8,5 +8,6 @@ namespace TodoMvc.Services
     public interface ITodoItemService
     {
         Task<IEnumerable<ToDoItem>> GetIncompleteItemsAsync();
+        Task<bool> AddItemAsync(NewToDoItem newToDoItem);
     }
 }
