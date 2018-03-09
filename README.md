@@ -111,3 +111,12 @@ Atualize a base de dados
 ```bash
 dotnet ef database update
 ```
+
+Adicionar o bundler para minificar css e js
+
+```bash
+dotnet add package BuildBundlerMinifier
+dotnet build
+dotnet clean
+dotnet run
+```
