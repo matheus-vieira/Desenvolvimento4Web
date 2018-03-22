@@ -112,6 +112,15 @@ Atualize a base de dados
 dotnet ef database update
 ```
 
+Adicionar o pacote Humanizer
+
+```bash
+dotnet add package Humanizer
+dotnet build
+dotnet clean
+dotnet run
+```
+
 Adicionar o bundler para minificar css e js
 
 ```bash
@@ -120,3 +129,17 @@ dotnet build
 dotnet clean
 dotnet run
 ```
+
+Criando uma solução
+
+```bash
+dotnet new sln
+```
+
+Adicionando o projeto à solução
+
+```bash
+dotnet sln ToDo.sln add TodoMvc/TodoMvc.csproj
+```
+
+Adicionar campo de data ao criar um item a fazer

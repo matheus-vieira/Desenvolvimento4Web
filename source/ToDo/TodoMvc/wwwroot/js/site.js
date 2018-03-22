@@ -2,6 +2,11 @@
 $(document).ready(function () {
     $('#add-item-button')
         .on('click', addItems);
+
+    $('.done-checkbox')
+        .on('click', function (e) {
+            markCompleted(e.target);
+        })
 });
 
 function addItems() {
@@ -22,5 +27,18 @@ function addItems() {
                 .text(firstError)
                 .show();
         }
+    });
+}
+
+function markCompleted(checkbox) {
+    checkbox.disabled = true;
+
+    var data = { id: checkbox.name };
+
+    $.post('/ToDo/MarkDone', data, function () {
+        var row = checkbox  // a partir do checkbox
+            .parentElement  // acessamos a td
+            .parentElement; // acessamos a tr
+        $(row).addClass('done');
     });
 }

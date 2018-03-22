@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
-using TodoMvc.Models;
-using TodoMvc.Data;
 using System.Linq;
+using System.Threading.Tasks;
+using TodoMvc.Data;
+using TodoMvc.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace TodoMvc.Services
@@ -19,8 +19,7 @@ namespace TodoMvc.Services
 
         public async Task<IEnumerable<ToDoItem>> GetIncompleteItemsAsync()
         {
-            var items = await _context
-                .Items
+            var items = await _context.Items
                 .Where(x => x.IsDone == false)
                 .ToArrayAsync();
 
@@ -41,6 +40,25 @@ namespace TodoMvc.Services
 
             var saveResult = await _context.SaveChangesAsync();
 
+            return saveResult == 1;
+        }
+
+        public async Task<bool> MarkDoneAsync(Guid id)
+        {
+            var item = await _context.Items
+                .Where(x => x.Id == id)
+                .SingleOrDefaultAsync();
+
+            if (item == null)
+                return false;
+
+            item.IsDone = true;
+
+            var saveResult = await _context
+                .SaveChangesAsync();
+
+            // One entity should
+            // have been updated
             return saveResult == 1;
         }
     }
