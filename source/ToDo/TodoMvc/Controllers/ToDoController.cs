@@ -54,7 +54,7 @@ namespace TodoMvc.Controllers
             var successful = await _todoItemsService
                 .MarkDoneAsync(id);
 
-            return Ok();
+            return Ok(successful);
         }
     }
 }

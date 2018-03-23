@@ -4,16 +4,20 @@ $(document).ready(function () {
         .on('click', addItems);
 
     $('.done-checkbox')
-        .on('click', function (e) {
-            markCompleted(e.target);
-        })
+        .on('click', function (event) {
+            markCompleted(event.target);
+        });
 });
 
 function addItems() {
     $('#add-item-error').hide();
     var newTitle = $('#add-item-title').val();
+    var newDueAt = $('#add-item-due-at').val();
 
-    var data = { title: newTitle };
+    var data = {
+        title: newTitle,
+        dueAt: newDueAt
+    };
     $.post('ToDo/AddItem', data, function () {
         window.location = '/ToDo';
     })
@@ -34,8 +38,7 @@ function markCompleted(checkbox) {
     checkbox.disabled = true;
 
     var data = { id: checkbox.name };
-
-    $.post('/ToDo/MarkDone', data, function () {
+    $.post('ToDo/MarkDone', data, function () {
         var row = checkbox  // a partir do checkbox
             .parentElement  // acessamos a td
             .parentElement; // acessamos a tr

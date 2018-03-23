@@ -33,7 +33,7 @@ namespace TodoMvc.Services
                 Id = Guid.NewGuid(),
                 IsDone = false,
                 Title = newToDoItem.Title,
-                DueAt = DateTimeOffset.Now.AddDays(3)
+                DueAt = newToDoItem.DueAt
             };
 
             _context.Items.Add(entity);

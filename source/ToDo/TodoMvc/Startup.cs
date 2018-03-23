@@ -43,7 +43,7 @@ namespace TodoMvc
             services.AddTransient<IEmailSender, EmailSender>();
 
             // Dependency Injection of our service
-            services.AddTransient<ITodoItemService, ToDoItemService>();
+            services.AddScoped<ITodoItemService, ToDoItemService>();
 
             services.AddMvc();
         }
