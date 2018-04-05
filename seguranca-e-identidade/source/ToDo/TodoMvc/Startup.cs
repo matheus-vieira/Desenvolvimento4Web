@@ -46,6 +46,14 @@ namespace TodoMvc
             services.AddScoped<ITodoItemService, ToDoItemService>();
 
             services.AddMvc();
+
+            services
+                .AddAuthentication()
+                .AddFacebook(fbOptions =>
+                {
+                    fbOptions.AppId = Configuration["Authentication:Facebook:AppId"];
+                    fbOptions.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
