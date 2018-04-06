@@ -29,11 +29,15 @@ Utilizando Identy vamos:
 > Os nomes podem causar confusão, mas são coisas distintas
 > 
 > ### Authentication
+>
 > Trata de informações do usuário, se está logado, etc.
+>
 > `Eu conheço esse usuário?`
 >
 > ### Authorization
+>
 > Após a autenticação verifica se o usuário tem acesso ào recurso solicitado
+>
 > `Esse usuário tem permissão para fazer esta ação?`
 
 
@@ -76,14 +80,16 @@ O próprio template já implementa login e senha por padrão.
 
 Para criação de senhas já possui políticas de segurança
 
-* The Password must be at least 6 and at max 100 characters long.
 * De 6-100 caracteres
-* Pelo menos um caracter não-alfanumérico
+* Pelo menos um caracter número
+* Pelo menos um caracter especial
 * Pelo menos uma minúscula ('a'-'z').
 * Pelo menos uma maiúscula ('A'-'Z').
 
-> Ex.:
-> teste@test.com
-> !23a456A
+> Exemplo:
+>
+> usuário: teste@test.com
+>
+> password: !23a456A
 
 [Realizar login com o Facebook](/Desenvolvimento4Web/seguranca-e-identidade/facebook-login)

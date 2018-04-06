@@ -61,6 +61,8 @@ Vá clicando em Avançar para finalizar a configuração.
 
 Em Configurações / Básico no menu lateral pegue as informações de ID do Aplicativo e a Chave Secreta
 
+![ID e Chave secreta](/Desenvolvimento4Web/seguranca-e-identidade/facebook-login/images/id-secret.png)
+
 Agora editaremos o arquivo `Startup.cs` adicionando o código abaixo dentro do método configure service.
 
 ```csharp
@@ -68,14 +70,14 @@ services
     .AddAuthentication()
     .AddFacebook(options => 
     {
-        options.AppId = Configuration["Facebook:AppId"];
-        options.AppSecret = Configuration["Facebook:AppSecret"];
+        options.AppId = Configuration["Authentication:Facebook:AppId"];
+        options.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
     });
 ```
 
 Não armazenaremos as informações do aplicativo em nosso arquivo `appsetting.js`, pois não é o tipo de informações que queremos deixar a mostra em um github por exemplo.
 
-### Secrets manager
+### [Gerenciador de segredo](https://docs.microsoft.com/pt-br/aspnet/core/security/app-secrets?tabs=visual-studio#secret-manager)
 
 Para armazenar informações sensíveis como senhas devemos utilizar o comando [`dotnet user-secrets`](https://docs.microsoft.com/pt-br/aspnet/core/security/app-secrets?tabs=visual-studio)
 
