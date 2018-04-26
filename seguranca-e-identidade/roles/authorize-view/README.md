@@ -16,7 +16,7 @@ Utilizamos o `SignInManager` para determinar se o usuário está logado na aplic
 
 ### `Views/Shared/_AdminActionsPartial.cshtml`
 
-```csharp
+```razor
 @using Microsoft.AspNetCore.Identity
 @using TodoMvc.Models
 

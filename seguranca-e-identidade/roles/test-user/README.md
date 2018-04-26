@@ -100,6 +100,15 @@ Após logar trocar a senha do usuário administrador
 
 Ao executar a aplicação será criado o usuário `admin@todo.local` atrelado ao role `Administrator`
 
+> Nota
+> 
+> Para executar em ambiente desenvolvimento utilizar o comando
+> 
+> ```bash
+> ASPNETCORE_ENVIRONMENT=Development dotnet run
+> ```
+> 
+
 Adicione outras funcionalidades como deletar um usuário!
 
 [Roles]({{ '/seguranca-e-identidade/roles' | relative_url }})
