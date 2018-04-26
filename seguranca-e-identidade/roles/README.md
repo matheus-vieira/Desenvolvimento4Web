@@ -130,7 +130,7 @@ Finalmente temos a View para a nossa ação.
 
 Inicie a aplicação e tente acessar a rota `/ManageUsers` logado com um usuário comum. Isso irá mostrar uma página de "Acesso Negado". Isso aconte pois não temos nenhum usuário associado ao papel de `Administrador`.
 
-![Acesso Negado]({{ /seguranca-e-identidade/roles/images/access-denied.png' | relative_url }})
+![Acesso Negado]({{ '/seguranca-e-identidade/roles/images/access-denied.png' | relative_url }})
 
 [Criando usuário de teste]({{ '/seguranca-e-identidade/roles/test-user' | relative_url }})
 
