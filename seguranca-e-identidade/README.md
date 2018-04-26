@@ -94,8 +94,8 @@ Para criação de senhas já possui políticas de segurança
 
 [Facebook Login]({{ '/seguranca-e-identidade/facebook-login' | relative_url }})
 
-[Authorize]({{ '/seguranca-e-identidade/authorize'  | relative_url} )
+[Authorize]({{ '/seguranca-e-identidade/authorize'  | relative_url }} )
 
-[Identity]({{ '/seguranca-e-identidade/identity'  | relative_url} )
+[Identity]({{ '/seguranca-e-identidade/identity'  | relative_url }} )
 
-[Roles]({{ '/seguranca-e-identidade/roles'  | relative_url} )
+[Roles]({{ '/seguranca-e-identidade/roles'  | relative_url }} )
