@@ -20,4 +20,6 @@ namespace TodoMvc.Controllers
       //...
     }
 }
-``` 
+```
+
+[Segurança e Identidade]({{ '/seguranca-e-identidade' | relative_url }})

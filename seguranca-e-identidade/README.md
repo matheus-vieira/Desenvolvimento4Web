@@ -92,6 +92,10 @@ Para criação de senhas já possui políticas de segurança
 >
 > password: !23a456A
 
-[Realizar login com o Facebook](/Desenvolvimento4Web/seguranca-e-identidade/facebook-login)
+[Facebook Login]({{ '/seguranca-e-identidade/facebook-login' | relative_url }})
 
-[Forçando o login](/Desenvolvimento4Web/seguranca-e-identidade/authorize)
+[Authorize]({{ '/seguranca-e-identidade/authorize'  | relative_url} )
+
+[Identity]({{ '/seguranca-e-identidade/identity'  | relative_url} )
+
+[Roles]({{ '/seguranca-e-identidade/roles'  | relative_url} )

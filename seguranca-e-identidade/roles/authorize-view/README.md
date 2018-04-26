@@ -90,3 +90,7 @@ Os templates do `dotnet new` oferecem views e controllers prontas que lidam com 
 Há muito mais que o ASP.NET Core Identity pode fazer.
 
 Você pode aprender mais na documentação e nos exemplos disponíveis em [https://docs.asp.net](https://docs.asp.net).
+
+[Roles]({{ '/seguranca-e-identidade/roles' | relative_url }})
+
+[Segurança e Identidade]({{ '/seguranca-e-identidade' | relative_url }})

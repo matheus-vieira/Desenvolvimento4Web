@@ -101,3 +101,7 @@ Após logar trocar a senha do usuário administrador
 Ao executar a aplicação será criado o usuário `admin@todo.local` atrelado ao role `Administrator`
 
 Adicione outras funcionalidades como deletar um usuário!
+
+[Roles]({{ '/seguranca-e-identidade/roles' | relative_url }})
+
+[Segurança e Identidade]({{ '/seguranca-e-identidade' | relative_url }})

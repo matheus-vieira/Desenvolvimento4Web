@@ -92,3 +92,5 @@ Caso o usuário não esteja logado esse método retorna `null`.
 Na ação `Index`, caso o usuário não exista, ou há dúvidas sobre sua identidade retorne o método [`Challenge`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.controllerbase.challenge?view=aspnetcore-2.0) que força a verificação da identidade ou indo para a tela de login e senha ou redirecionando para um login de terceiro.
 
 Na outras ações retorne o método [`Unauthorized`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.controllerbase.unauthorized?view=aspnetcore-2.0)
+
+[Segurança e Identidade]({{ '/seguranca-e-identidade' | relative_url }})

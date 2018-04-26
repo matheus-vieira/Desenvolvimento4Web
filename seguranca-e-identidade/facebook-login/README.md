@@ -111,3 +111,5 @@ No arquivo `secrets.json` informe as informações e salve o arquivo.
 ```
 
 Os valores salvos são carregados através da propriedade `Configuration`
+
+[Segurança e Identidade]({{ '/seguranca-e-identidade' | relative_url }})
