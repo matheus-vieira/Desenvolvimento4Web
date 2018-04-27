@@ -100,12 +100,19 @@ Após logar trocar a senha do usuário administrador
 
 Ao executar a aplicação será criado o usuário `admin@todo.local` atrelado ao role `Administrator`
 
-> Nota
+> ## Nota
 > 
 > Para executar em ambiente desenvolvimento utilizar o comando
 > 
+> ### bash
+> 
 > ```bash
 > ASPNETCORE_ENVIRONMENT=Development dotnet run
+> ```
+> 
+> ### PowerShell
+> ```powershel
+> $Env:ASPNETCORE_ENVIRONMENT = "Development"; dotnet run
 > ```
 > 
 
