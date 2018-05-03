@@ -99,3 +99,5 @@ Para criação de senhas já possui políticas de segurança
 [Identity]({{ '/seguranca-e-identidade/identity'  | relative_url }} )
 
 [Roles]({{ '/seguranca-e-identidade/roles'  | relative_url }} )
+
+[Exercícios]({{ '/seguranca-e-identidade/exercícios'  | relative_url }} )
