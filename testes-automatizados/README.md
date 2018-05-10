@@ -32,4 +32,4 @@ Quando você escreve um teste de unidade, por outro lado, você precisa manipula
 
 [Projeto de Testes]({{ '/testes-automatizados/projeto'  | relative_url }} )
 
-Na minha pós-graduação em Engenharia de Software e Arquitetura de Sistemas fiz uma apresentação sobre [Testes automatizados de software - Testes com Selenium, Node e TheIntern](https://www.slideshare.net/FEMUG-CWB/testes-automatizados-de-software-54525733?qid=c794c287-7274-4dce-ab02-6ef08e40d5ad&v=&b=&from_search=1)
+Na minha pós-graduação em Engenharia de Software e Arquitetura de Sistemas fiz uma apresentação sobre [Testes automatizados de software - Testes com Selenium, Node e TheIntern](https://www.slideshare.net/macovieira/testes-automatizados-de-software-54527759?qid=9b506f25-233d-47fa-9316-1997f86c418d&v=&b=&from_search=1)
