@@ -26,3 +26,8 @@ Dessa forma podemos ter um gráfico de dependência
 ToDoController -> TodoItemService -> ApplicationDbContext
 ```
 
+Quando o aplicativo é executado normalmente, o sistema de injeção de dependência do ASP.NET Core injeta cada um desses objetos no gráfico de dependência quando o ToDoController ou o ToDoItemService é criado.
+
+Quando você escreve um teste de unidade, por outro lado, você precisa manipular o gráfico de dependência sozinho. É típico fornecer versões somente de teste ou `mock` dessas dependências. Isso significa que você pode isolar apenas a lógica da classe ou método que está testando. (Isso é importante! Se você está testando um serviço, não quer também gravar acidentalmente no banco de dados.)
+
+[Projeto de Testes]({{ '/testes-automatizados/projeto'  | relative_url }} )
