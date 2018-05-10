@@ -122,9 +122,12 @@ Na Janela que se segue selecione o projeto `TodoMvc`
 
 ![Selecionar o projeto]({{ 'testes-automatizados/assets/images/vs-sel-referencia.png' | relative_url }})
 
-```bashz
+No terminal rode esse commando, estando na mesma pasta do projeto de teste:
+
+```bash
+cd ToDo.UnitTests/
 dotnet add reference ../TodoMvc/TodoMvc.csproj
-Reference `..\TodoMvc\TodoMvc.csproj` added to the project.r
+Reference `..\TodoMvc\TodoMvc.csproj` added to the project.
 ```
 
 Exclua o arquivo `UnitTest1.cs` criado automaticamente.
