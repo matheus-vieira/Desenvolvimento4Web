@@ -31,3 +31,5 @@ Quando o aplicativo é executado normalmente, o sistema de injeção de dependê
 Quando você escreve um teste de unidade, por outro lado, você precisa manipular o gráfico de dependência sozinho. É típico fornecer versões somente de teste ou `mock` dessas dependências. Isso significa que você pode isolar apenas a lógica da classe ou método que está testando. (Isso é importante! Se você está testando um serviço, não quer também gravar acidentalmente no banco de dados.)
 
 [Projeto de Testes]({{ '/testes-automatizados/projeto'  | relative_url }} )
+
+Na minha pós-graduação em Engenharia de Software e Arquitetura de Sistemas fiz uma apresentação sobre [Testes automatizados de software - Testes com Selenium, Node e TheIntern](https://www.slideshare.net/FEMUG-CWB/testes-automatizados-de-software-54525733?qid=c794c287-7274-4dce-ab02-6ef08e40d5ad&v=&b=&from_search=1)
