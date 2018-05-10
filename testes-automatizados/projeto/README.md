@@ -116,11 +116,11 @@ Como o projeto de teste usará as classes definidas em seu projeto principal, vo
 
 Com o VS2017 clique com o botão direito em `Dependências` e selecione `Adicionar Referência`.
 
-![Adicionar referência]({{ 'testes-automatizados/assets/images/vs-add-referência.png' | relative_url }})
+![Adicionar referência]({{ 'testes-automatizados/assets/images/vs-add-referencia.png' | relative_url }})
 
 Na Janela que se segue selecione o projeto `TodoMvc`
 
-![Selecionar o projeto]({{ 'testes-automatizados/assets/images/vs-sel-referência.png' | relative_url }})
+![Selecionar o projeto]({{ 'testes-automatizados/assets/images/vs-sel-referencia.png' | relative_url }})
 
 ```bashz
 dotnet add reference ../TodoMvc/TodoMvc.csproj
