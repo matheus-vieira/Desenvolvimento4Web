@@ -148,16 +148,21 @@ Você está pronto para escrever seu primeiro teste.
 Dê uma olhada na lógica no método `AddItemAsync()` do `TodoItemService`:
 
 ```csharp
-public async Task<bool> AddItemAsync(TodoItem newItem, ApplicationUser user)
+public async Task<bool> AddItemAsync(NewToDoItem newToDoItem, ApplicationUser user)
 {
-    newItem.Id = Guid.NewGuid();
-    newItem.IsDone = false;
-    newItem.DueAt = DateTimeOffset.Now.AddDays(3);
-    newItem.UserId = user.Id;
+    var entity = new ToDoItem
+    {
+        Id = Guid.NewGuid(),
+        OwnerId = user.Id,
+        IsDone = false,
+        Title = newToDoItem.Title,
+        DueAt = newToDoItem.DueAt
+    };
 
-    _context.Items.Add(newItem);
+    _context.Items.Add(entity);
 
     var saveResult = await _context.SaveChangesAsync();
+
     return saveResult == 1;
 }
 ```
