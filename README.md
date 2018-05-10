@@ -145,3 +145,5 @@ dotnet sln ToDo.sln add TodoMvc/TodoMvc.csproj
 Adicionar campo de data ao criar um item a fazer
 
 [Segurança e Identidade]({{ '/seguranca-e-identidade'  | relative_url }} )
+
+[Testes Automatizados]({{ '/testes-automatizados'  | relative_url }} )
