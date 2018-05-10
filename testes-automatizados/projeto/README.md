@@ -12,7 +12,7 @@ Clique com o botão direto na Solution:
 
 Na janela que aparece selecione o projeto `ToDo.UnitTests`.
 
-![Nomeando o projeto]({{ 'testes-automatizados/assets/images/vs-nomear' | relative_url }})
+![Nomeando o projeto]({{ 'testes-automatizados/assets/images/vs-nomear.png' | relative_url }})
 
 Se você está atualmente no diretório do seu projeto, clique em um nível acima.(Esse diretório raiz também será chamado ToDo). Em seguida, use este comando para criar um novo projeto de teste:
 
@@ -116,11 +116,11 @@ Como o projeto de teste usará as classes definidas em seu projeto principal, vo
 
 Com o VS2017 clique com o botão direito em `Dependências` e selecione `Adicionar Referência`.
 
-![Adicionar referência]({{ 'testes-automatizados/assets/images/vs-add-referência' | relative_url }})
+![Adicionar referência]({{ 'testes-automatizados/assets/images/vs-add-referência.png' | relative_url }})
 
 Na Janela que se segue selecione o projeto `TodoMvc`
 
-![Selecionar o projeto]({{ 'testes-automatizados/assets/images/vs-sel-referência' | relative_url }})
+![Selecionar o projeto]({{ 'testes-automatizados/assets/images/vs-sel-referência.png' | relative_url }})
 
 ```bashz
 dotnet add reference ../TodoMvc/TodoMvc.csproj
@@ -286,11 +286,11 @@ Em vez disso, o teste verifica se o valor de DueAt está a menos de um segundo d
 
 No VS2017 vá no menu Testar > Executar > Todos os Testes
 
-![Executando testes]({{ 'testes-automatizados/assets/images/vs-executar' | relative_url }})
+![Executando testes]({{ 'testes-automatizados/assets/images/vs-executar.png' | relative_url }})
 
 Após será apresentada a janela `Gerenciador de Testes`
 
-![Gerenciador de Testes]({{ 'testes-automatizados/assets/images/vs-executado' | relative_url }})
+![Gerenciador de Testes]({{ 'testes-automatizados/assets/images/vs-executado.png' | relative_url }})
 
 No terminal rode esse commando, estando na mesma pasta do projeto de teste
 
