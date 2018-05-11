@@ -195,9 +195,9 @@ Para escrever um teste de unidade que verificará a lógica no `TodoItemService`
 ```csharp
 using System;
 using System.Threading.Tasks;
-using ToDoMvc.Data;
+using TodoMvc.Data;
 using TodoMvc.Models;
-using ToDoMvc.Services;
+using TodoMvc.Services;
 using Microsoft.EntityFrameworkCore;
 using Xunit;
 
