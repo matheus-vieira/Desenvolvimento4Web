@@ -94,7 +94,7 @@ dotnet user-secrets set Authentication:Facebook:AppId <id do aplicativo>
 ```
 
 ```bash
-dotnet user-secrets set Authentication:Facebook:AppAppSecret <chave secreta do aplicativo>
+dotnet user-secrets set Authentication:Facebook:AppSecret <chave secreta do aplicativo>
 ```
 
 Via Visual Studio, no menu do contexto selecione a opção de Manage User Secrets
@@ -106,7 +106,7 @@ No arquivo `secrets.json` informe as informações e salve o arquivo.
 ```json
 {
   "Authentication:Facebook:AppId": "<id do app>",
-  "Authentication:Facebook:AppAppSecret": "<app secret>"
+  "Authentication:Facebook:AppSecret": "<app secret>"
 }
 ```
 
